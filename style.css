@@ -1,0 +1,130 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    border: none;
+    outline: none;
+}
+
+body {
+    font-size: 62.8%;
+    font-family: calibri;
+    background-image: url(img/bg-img.jpg);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+} 
+
+img {
+   display: block;
+   max-width: 100%;
+}
+
+button {
+   cursor: pointer;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-section {
+    display: flex;
+    margin-top: 2em;
+    gap: 1em;
+    flex-wrap: wrap;
+}
+
+.input-section input {
+    border: 1px solid lime;
+    padding: 0.5em;
+    background-color: transparent;
+    color: wheat;
+}
+
+.input-section input::placeholder {
+    color: white;
+    opacity: 0.75;
+}
+
+.input-section button {
+    font-size: 1rem;
+    padding: 0.5em 1.5em;
+    border-radius: 3em;
+    color: white;
+    background-color: lime;
+}
+
+.todo-container {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 1em;
+    width: 90%;
+}
+
+.todo-container li {
+    display: grid;
+    grid-template-columns: auto repeat(2, 30px);
+    grid-gap: 1em;
+    justify-content: center;
+    align-content: center;
+    word-break: normal;
+    align-items: center;
+    padding: 1em;
+    margin-top: 1em;
+    border-radius: 0.7em;
+    background-color: #004739;
+    text-align: center;
+}
+
+.todo-container li p {
+    font-size: 1rem;
+    text-transform: capitalize;
+    margin-right: 2em;
+    color: wheat;
+    grid-template-rows: auto;
+}
+
+.checked-img-container,
+.delete-img-container {
+    height: 35px;
+    width: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.checked-img-container {
+    border: 2px solid gold;
+    background-color: transparent;
+}
+
+.delete-img-container {
+    border: 2px solid red;
+    background-color: transparent;
+}
+
+.delete-img-container:hover {
+    background-color: red;
+}
+
+.checked-img-container img,
+.delete-img-container img {
+    width: 50%;
+}
+
+.line-through {
+    text-decoration: line-through;
+}
+
+.gold {
+    background-color: gold;
+}
